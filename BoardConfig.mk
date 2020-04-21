@@ -53,5 +53,8 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
 TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/ramdisk-recovery.cpio
 
+# Security Patch Level
+#VENDOR_SECURITY_PATCH := 2019-06-30
+
 # inherit from the proprietary version
 -include vendor/lge/judyln/BoardConfigVendor.mk
