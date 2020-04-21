@@ -1,4 +1,0 @@
-service vendor.livedisplay-hal-2-0-sysfs /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service-sysfs.judyln
-    class hal
-    user root
-    group system
