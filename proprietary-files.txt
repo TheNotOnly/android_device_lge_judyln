@@ -650,3 +650,12 @@ vendor/etc/sensors/sns_reg_config
 
 vendor/init.lge.svelte.rc
 vendor/bin/init.lge.zramswap.sh
+
+#Graphics
+
+vendor/etc/permissions/android.hardware.opengles.aep.xml
+vendor/lib/libOpenCL-pixel.so
+vendor/lib64/libOpenCL-pixel.so
+vendor/etc/permissions/android.hardware.vulkan.compute.xml
+vendor/etc/permissions/android.hardware.vulkan.level.xml
+vendor/etc/permissions/android.hardware.vulkan.version.xml
