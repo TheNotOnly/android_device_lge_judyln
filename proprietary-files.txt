@@ -337,13 +337,11 @@ vendor/lib64/hw/fingerprint.sdm845.so
 vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libfpfactory.so
-vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_algo.so
 vendor/lib/hw/fingerprint.sdm845.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/libfpfactory.so
-vendor/lib/libgf_ca.so
 vendor/lib/libgf_hal.so
 vendor/lib/libgf_algo.so
 

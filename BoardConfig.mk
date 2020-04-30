@@ -21,8 +21,6 @@ DEVICE_PATH := device/lge/judyln
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-BTHW_FW_EXTENDED_CONFIGURATION := true
-BTHW_FW_EXTENDED_CONFIGURATION_ONLY_I2SPCM_CONFIG = := false
 
 # Camera
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
@@ -54,7 +52,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.judyln
 TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/ramdisk-recovery.cpio
 
 # Security Patch Level
-#VENDOR_SECURITY_PATCH := 2019-06-30
+VENDOR_SECURITY_PATCH := 2019-06-30
 
 # inherit from the proprietary version
 -include vendor/lge/judyln/BoardConfigVendor.mk
