@@ -86,5 +86,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCam
 
+#GCam 6.1
+PRODUCT_PACKAGES += \
+    GCam6
+
 # common judy (sdm845)
 $(call inherit-product, device/lge/sdm845-common/sdm845.mk)
