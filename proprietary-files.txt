@@ -1,21 +1,12 @@
 # Audio
-vendor/etc/acdbdata/v1/General_cal.acdb 
-vendor/etc/acdbdata/v1/Global_cal.acdb 
-vendor/etc/acdbdata/v1/Bluetooth_cal.acdb 
-vendor/etc/acdbdata/v1/Headset_cal.acdb 
-vendor/etc/acdbdata/v1/Hdmi_cal.acdb 
-vendor/etc/acdbdata/v1/Codec_cal.acdb 
-vendor/etc/acdbdata/v1/Speaker_cal.acdb 
-vendor/etc/acdbdata/v1/Handset_cal.acdb
-
+vendor/etc/acdbdata/Bluetooth_cal.acdb
+vendor/etc/acdbdata/Codec_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
-vendor/etc/acdbdata/Bluetooth_cal.acdb
-vendor/etc/acdbdata/Headset_cal.acdb
-vendor/etc/acdbdata/Hdmi_cal.acdb
-vendor/etc/acdbdata/Codec_cal.acdb
-vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/Handset_cal.acdb
+vendor/etc/acdbdata/Hdmi_cal.acdb
+vendor/etc/acdbdata/Headset_cal.acdb
+vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Camera
 vendor/lib/hw/camera.sdm845.so
@@ -40,7 +31,6 @@ vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmorpho_superzoom.so
 vendor/lib/libmpbase.so
-vendor/lib/sensors.hal.tof.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 
@@ -107,22 +97,22 @@ vendor/lib/camera/liblg_awb_param_imx351w_snapshot.so
 vendor/lib/camera/liblg_awb_param_imx351w_sum_binning.so
 vendor/lib/camera/liblg_awb_param_imx351w_video.so
 vendor/lib/camera/liblg_awb_param_imx351w_zsl.so
-
 vendor/lib/camera/titan17x_usecases.bin
 vendor/lib/liblgae_main.so
 vendor/lib/liblgawb_main.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/lib.com.lge.elvis.so
-vendor/lib/lib_wdr2.so
 
 # Camera - components
 vendor/lib/camera/components/com.lge.node.camerasolution.so
 vendor/lib/camera/components/com.lge.node.capturebokeh.so
+vendor/lib/camera/components/com.lge.node.elpis.so
 vendor/lib/camera/components/com.lge.node.elvis.so
 vendor/lib/camera/components/com.lge.node.hdr.so
 vendor/lib/camera/components/com.lge.node.lavis.so
 vendor/lib/camera/components/com.lge.node.multiframe.so
 vendor/lib/camera/components/com.lge.node.realtimebokeh.so
+vendor/lib/camera/components/com.lge.node.warp.so
 vendor/lib/camera/components/com.lge.stats.aec.so
 vendor/lib/camera/components/com.lge.stats.aecwrapper.so
 vendor/lib/camera/components/com.lge.stats.af_core.so
@@ -155,7 +145,6 @@ vendor/lib/camera/components/com.qti.stats.pdlib.so
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 
-
 # Camera - Sensor
 vendor/lib/camera/com.qti.sensor.imx351.so
 vendor/lib/camera/com.qti.sensor.imx351_wide.so
@@ -171,59 +160,73 @@ vendor/etc/camera/camera_tune_config.xml
 vendor/lib/camera/com.qti.tuned.default.bin
 vendor/lib/camera/com.qti.tuned.imx351.bin
 vendor/lib/camera/com.qti.tuned.imx351_wide.bin
+vendor/lib/camera/com.qti.tuned.imx351_wide_p.bin
 vendor/lib/camera/com.qti.tuned.sl846.bin
-
-# Camera - HDR
-vendor/etc/camera/vnr/SJ_VideoNR_LUT.bin
 
 # Configstore
 vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
+vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vendor.lge.hardware.configstore@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/vendor.lge.hardware.configstore@1.0.so
+vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 
 # Crypto
-vendor/lib/libGPQTEEC_vendor.so
-vendor/lib/libatd_common.so
-vendor/lib/libfpfactory-impl.so
-vendor/lib/libhdcp1prov.so
-vendor/lib/libhdcp2p2prov.so
-vendor/lib/libhdcpsrm.so
-vendor/lib/liblgefido_hal_impl.so
-vendor/lib/libmdsprpc.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libpvr.so
-vendor/lib/librmp.so
-vendor/lib/libsi.so
-vendor/lib/libwvoemprov.so
-vendor/lib/libatd_corelib.so
-vendor/lib/libatd_modeminterface.so
-vendor/lib/libcpion.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libcppf.so
+vendor/bin/hw/vendor.lge.hardware.lgatcmd@1.0-service
+vendor/etc/init/vendor.lge.hardware.lgatcmd@1.0-service.rc
+vendor/lib64/libcpion.so
 vendor/lib64/libfpfactory-impl.so
+vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/liblgefido_hal_impl.so
+vendor/lib64/libLgeVendorFeatures2.so
+vendor/lib64/liblgftmitem_vendor.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
 vendor/lib64/libsi.so
-vendor/lib64/libcpion.so
-vendor/lib64/liblgftmitem.so
-vendor/lib/liblgftmitem.so
-vendor/lib/libbluedroid_bdt.so
-vendor/lib/libunified_sysfs_pm.so
-vendor/lib/liblgehdcpek.so
-vendor/bin/hw/vendor.lge.hardware.lgatcmd@1.0-service
-vendor/etc/init/vendor.lge.hardware.lgatcmd@1.0-service.rc
+vendor/lib64/libunified_sysfs_vendor.so
 vendor/lib/hw/vendor.lge.hardware.lgatcmd@1.0-impl.so
+vendor/lib/libatd_common.so
+vendor/lib/libatd_corelib.so
+vendor/lib/libatd_modeminterface.so
+vendor/lib/libbluedroid_bdt.so
+vendor/lib/libcpion.so
+vendor/lib/libfpfactory-impl.so
+vendor/lib/libGPQTEEC_vendor.so
+vendor/lib/libhdcp1prov.so
+vendor/lib/libhdcp2p2prov.so
+vendor/lib/libhdcpsrm.so
+vendor/lib/liblgefido_hal_impl.so
+vendor/lib/liblgehdcpek.so
+vendor/lib/libLgeVendorFeatures2.so
+vendor/lib/liblgftmitem_vendor.so
+vendor/lib/libmdsprpc.so
+vendor/lib/liboemcrypto.so
+vendor/lib/libpvr.so
+vendor/lib/librmp.so
+vendor/lib/libsi.so
+vendor/lib/libunified_sysfs_vendor.so
+vendor/lib/libwvoemprov.so
+vendor/lib/vendor.lge.hardware.filehandle@1.0.so
 vendor/lib/vendor.lge.hardware.lgatcmd@1.0.so
 
 # DRM
+product/lib/vendor.qti.hardware.qseecom@1.0.so
+product/lib64/vendor.qti.hardware.qseecom@1.0.so
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
 vendor/bin/seemp_healthd
+vendor/etc/init/qseecomd.rc
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel.so
@@ -237,6 +240,8 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libtzdrmgenprov.so
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/libcppf.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -249,6 +254,7 @@ vendor/lib/libspl.so
 vendor/lib/libssd.so
 vendor/lib/libStDrvInt.so
 vendor/lib/libtzdrmgenprov.so
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so
 
 # DSP
 vendor/bin/chre
@@ -277,14 +283,20 @@ vendor/lib/rfsa/adsp/fluence_voiceplus_module.so.1
 vendor/lib/rfsa/adsp/geofence.so
 vendor/lib/rfsa/adsp/HeaacDecoderModule.so.1
 vendor/lib/rfsa/adsp/LdacModule.so.1
+vendor/lib/rfsa/adsp/lg_nanoapp_pa.so
+vendor/lib/rfsa/adsp/lg_nanoapp_sbd.so
+vendor/lib/rfsa/adsp/lg_nanoapp_su.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 vendor/lib/rfsa/adsp/libchre_slpi_skel.so
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
 vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
@@ -311,15 +323,14 @@ vendor/lib64/libsymphonypower-1.1.4.so
 # Fingerprint
 vendor/bin/hw/vendor.lge.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/etc/vintf/manifest/vendor.lge.hardware.biometrics.fingerprint@2.1.xml
 vendor/lib64/hw/fingerprint.sdm845.so
 vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/libfpfactory.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_algo.so
 vendor/lib/hw/fingerprint.sdm845.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib/libfpfactory.so
 vendor/lib/libgf_hal.so
 vendor/lib/libgf_algo.so
 
@@ -399,49 +410,6 @@ vendor/etc/wifi/NA_GSM/bdwlan.bin
 vendor/etc/wifi/NA_GSM/bdwlan_ch0.bin
 vendor/etc/wifi/NA_GSM/bdwlan_ch1.bin
 
-# OpenGL
-vendor/etc/permissions/android.hardware.opengles.aep.xml
-
-# Wifi
-vendor/bin/hw/wlan_ril
-vendor/bin/cnss-daemon
-vendor/bin/fstman
-vendor/bin/hw/vendor.lge.hardware.wifi.hal@1.0-service
-vendor/etc/init/vendor.lge.hardware.wifi.hal@1.0-service.rc
-vendor/lib64/libdiagd_client_qca.so
-vendor/lib64/libril_wrapper.so
-vendor/lib64/libwfcu.so
-vendor/lib64/vendor.lge.hardware.wifi.hal@1.0.so
-vendor/lib64/vendor.lge.hardware.wifi.hostapd@1.0.so
-vendor/lib64/vendor.lge.hardware.wifi.supplicant@1.0.so
-vendor/lib64/vendor.lge.hardware.wifi.supplicant@2.0.so
-
-# Wifi - Configs
-vendor/etc/wifi/PerProviderSubscription.conf
-
-# Wifi - Wigig
-vendor/bin/wigighalsvc
-vendor/bin/wigignpt
-system/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
-system/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
-system/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
-
-# Wifi - Wigig - Configs
-vendor/etc/wifi/wigig_p2p_supplicant.conf
-vendor/etc/wifi/wigig_supplicant.conf
-vendor/etc/wifi/fstman.ini
-
-# FM Radio
-lib64/fm_helium.so
-lib64/libfm-hci.so
-lib64/vendor.qti.hardware.fm@1.0.so
-lib/fm_helium.so
-lib/libfm-hci.so
-lib/vendor.qti.hardware.fm@1.0.so
-
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
@@ -484,8 +452,6 @@ vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_SW49409_1440_2880_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_SW49410_1440_3120_cmd_mode_dsc_dsi_panel.xml
 
 # SCVE
 vendor/lib64/libscveBlobDescriptor.so
@@ -520,7 +486,6 @@ vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
 
 # Sensors
--framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
@@ -554,14 +519,7 @@ vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors (LGE)
-vendor/bin/hw/vendor.lge.hardware.sensors@1.0-service
-vendor/bin/sns_sensor_test_cpp
-vendor/etc/init/vendor.lge.hardware.sensors@1.0-service.rc
-vendor/lib64/hw/vendor.lge.hardware.sensors@1.0-impl.so
-vendor/lib64/vendor.lge.hardware.sensors@1.0.so
 vendor/lib64/libsensor_lge_cal.so
-vendor/lib/hw/vendor.lge.hardware.sensors@1.0-impl.so
-vendor/lib/vendor.lge.hardware.sensors@1.0.so
 vendor/lib/libsensor_lge_cal.so
 
 # Sensors configs
@@ -571,22 +529,16 @@ vendor/etc/sensors/registry/config/apds9160_0_reva.json
 vendor/etc/sensors/registry/config/apds9160_0_revc.json
 vendor/etc/sensors/registry/config/apds9160_0_revd_sub1.json
 vendor/etc/sensors/registry/config/apds9160_0_revd_sub2.json
-vendor/etc/sensors/registry/config/apds9939_0.json
-vendor/etc/sensors/registry/config/bmp285_0.json
-vendor/etc/sensors/registry/config/etc_version
 vendor/etc/sensors/registry/config/icm4x6xx_0.json
 vendor/etc/sensors/registry/config/icm4x6xx_0_reva.json
-vendor/etc/sensors/registry/config/lsm6ds3_0.json
-vendor/etc/sensors/registry/config/lsm6dsm_0.json
 vendor/etc/sensors/registry/config/sdm845_ak991x_0.json
 vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva.json
 vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub1.json
 vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub2.json
 vendor/etc/sensors/registry/config/sdm845_apds9939_0.json
-vendor/etc/sensors/registry/config/sdm845_bmp285_0.json
+vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0.json
 vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0.json
 vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0_reva.json
-vendor/etc/sensors/registry/config/sdm845_lsm6dsm_0.json
 vendor/etc/sensors/registry/config/sdm845_power_0.json
 vendor/etc/sensors/registry/config/sdm845_spl06_0.json
 vendor/etc/sensors/registry/config/sdm845_tmx4903.json
@@ -624,13 +576,3 @@ vendor/etc/sensors/registry/registry/sensors_registry
 vendor/etc/sensors/registry/registry/sensors_settings
 vendor/etc/sensors/registry/sns_reg_config
 vendor/etc/sensors/sns_reg_config
-
-# Vulkan
-vendor/etc/permissions/android.hardware.vulkan.compute-0.xml
-vendor/etc/permissions/android.hardware.vulkan.level-1.xml
-vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml
-
-#ZRAM
-
-vendor/init.lge.svelte.rc
-vendor/bin/init.lge.zramswap.sh
