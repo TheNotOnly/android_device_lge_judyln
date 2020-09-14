@@ -40,9 +40,6 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1048576000
 
 BOARD_ROOT_EXTRA_FOLDERS := oem persdata
 BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist \
-    /mnt/product/carrier:/carrier \
-    /vendor/dps:/dsp \
     /mnt/vendor/eri:/eri \
     /mnt/vendor/absolute:/persdata/absolute \
     /vendor/firmware_mnt:/firmware
