@@ -53,14 +53,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=judyln \
     PRODUCT_NAME=judyln_lao_com \
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.model \
-    ro.vendor.product.model \
-    ro.product.system.model \
-    ro.product.name \
-    ro.product.vendor.name
-
-
 # Inherit some common Evolution X stuff.
 CUSTOM_BUILD_TYPE := OFFICIAL
 EVO_MAINTAINER := TheNotOnly
