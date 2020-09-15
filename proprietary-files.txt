@@ -8,6 +8,11 @@ vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 
+# Bluetooth
+product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
+product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
+
 # Camera
 vendor/lib/hw/camera.sdm845.so
 vendor/lib/hw/com.qti.chi.override.so
@@ -33,6 +38,7 @@ vendor/lib/libmorpho_superzoom.so
 vendor/lib/libmpbase.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
+vendor/lib/lib_wdr2.so
 
 # Camera - Automatic white-balance and exposure
 vendor/lib/camera/fdconfigpreview.bin

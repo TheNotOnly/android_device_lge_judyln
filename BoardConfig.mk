@@ -16,13 +16,11 @@
 
 DEVICE_PATH := device/lge/judyln
 
-# inherit from common v40
+# inherit from common v30
 -include device/lge/sdm845-common/BoardConfigCommon.mk
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-BTHW_FW_EXTENDED_CONFIGURATION := true
-BTHW_FW_EXTENDED_CONFIGURATION_ONLY_I2SPCM_CONFIG = := false
 
 # Camera
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
