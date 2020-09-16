@@ -8,11 +8,6 @@ vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 
-# Bluetooth
-product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-
 # Camera
 vendor/lib/hw/camera.sdm845.so
 vendor/lib/hw/com.qti.chi.override.so
@@ -36,6 +31,7 @@ vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmorpho_superzoom.so
 vendor/lib/libmpbase.so
+vendor/lib/liblgdnn.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib/lib_wdr2.so
@@ -108,6 +104,7 @@ vendor/lib/liblgae_main.so
 vendor/lib/liblgawb_main.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/lib.com.lge.elvis.so
+vendor/lib/liblgawb_main.so
 
 # Camera - components
 vendor/lib/camera/components/com.lge.node.camerasolution.so
@@ -259,8 +256,10 @@ vendor/lib/vendor.qti.hardware.qseecom@1.0.so
 vendor/bin/chre
 vendor/lib/libfastcrc.so
 vendor/lib/libfastcvdsp_stub.so
+vendor/lib/libsymphony-1.1.2.so
 vendor/lib/libsymphony-1.1.4.so
 vendor/lib/libsymphonypower-1.1.4.so
+vendor/lib/libsymphonypower-1.1.2.so
 vendor/lib/rfsa/adsp/activity.so
 vendor/lib/rfsa/adsp/AlacDecoderModule.so.1
 vendor/lib/rfsa/adsp/ApeDecoderModule.so.1
@@ -530,14 +529,17 @@ vendor/etc/sensors/registry/config/apds9160_0_revd_sub1.json
 vendor/etc/sensors/registry/config/apds9160_0_revd_sub2.json
 vendor/etc/sensors/registry/config/icm4x6xx_0.json
 vendor/etc/sensors/registry/config/icm4x6xx_0_reva.json
+vendor/etc/sensors/registry/config/apds9939_0.json
+vendor/etc/sensors/registry/config/ak991x_dri_0.json
 vendor/etc/sensors/registry/config/sdm845_ak991x_0.json
 vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva.json
 vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub1.json
 vendor/etc/sensors/registry/config/sdm845_apds9160_0_reva_sub2.json
 vendor/etc/sensors/registry/config/sdm845_apds9939_0.json
 vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0.json
-vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0.json
 vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0_reva.json
+vendor/etc/sensors/registry/config/sdm845_apds9939_0.json
+vendor/etc/sensors/registry/config/sdm845_ak991x_0.json
 vendor/etc/sensors/registry/config/sdm845_power_0.json
 vendor/etc/sensors/registry/config/sdm845_spl06_0.json
 vendor/etc/sensors/registry/config/sdm845_tmx4903.json

@@ -29,8 +29,6 @@ TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
 TARGET_KERNEL_CONFIG := judyln_lao_com-perf_defconfig
 
-BOARD_HARDWARE_CLASS := $(DEVICE_PATH)/lineagehw
-
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 48708296704
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -43,7 +41,6 @@ TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/ramdisk-recovery.cpio
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_judyln
 TARGET_RECOVERY_DEVICE_MODULES := libinit_judyln
-
 
 # inherit from the proprietary version
 -include vendor/lge/judyln/BoardConfigVendor.mk
