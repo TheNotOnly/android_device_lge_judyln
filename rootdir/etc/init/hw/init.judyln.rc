@@ -11,9 +11,6 @@ import /vendor/etc/init/hw/init.lge.sensors.rc
 import /vendor/etc/init/hw/init.lge.fingerprints.rc
 import /vendor/etc/init/hw/init.lge.display.rc
 
-# import zram configurations
-import /vendor/init.lge.svelte.rc
-
 # import chipset common rc file
 import /vendor/etc/init/hw/init.sdm845.rc
 
